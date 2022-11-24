@@ -1,0 +1,18 @@
+<h3> LOG IN</h3>
+<form [formGroup]="loginform" (ngSubmit)="login()">
+        <div>
+                <img src="assets\images\log in.png" width="180" height="140" alt="image"> 
+        </div> 
+        <br> <br>
+
+    <div class="mb-3"> <label class ="f">Username : </label> <input formControlName="email" type="text" id="email" name="email"
+            placeholder="Phone no or email id" class="form-control">
+    </div>
+    <div > <label>Password : </label> <input formControlName="password" type="password" id="psw" name="psw" 
+            placeholder="Password" class="form-control" required = "true"> 
+    </div> <br>
+    <div> <button type="submit" [disabled]="!loginform.valid" >Login </button> 
+    </div> <br>
+    Dont have Account..??🤷‍♂️🤷‍♀️🤷‍♂️
+    <a routerLink="/signup"> <br> please signup here📝📝📝</a>
+</form>

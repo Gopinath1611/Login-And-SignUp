@@ -1,0 +1,38 @@
+form{
+    
+    background-color:violet;
+    background-size: auto;
+    
+    width: 400px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 350px;
+    padding-left: 70px;
+    box-shadow: 20px;
+   
+}
+img{
+    padding-left: 60px;
+}
+input{
+    width: auto;
+}
+h2{
+    padding-left: 70px;
+}
+p{
+    width: 300px;
+}
+.forminside{
+    width: 500px;
+}
+button{
+   margin-left: 100px;
+   border-radius: 10px;
+   padding: 5px;
+}
+

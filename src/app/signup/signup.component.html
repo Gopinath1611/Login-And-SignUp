@@ -1,0 +1,74 @@
+<div class="divsigin">
+    <section>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <form class="form1" [formGroup]="signinform" (ngSubmit)="signin()">
+            <div>
+                <img class="logo" src="assets\images\digital-marketing.png" width="180" height="140" alt="image">
+            </div>
+
+
+            <div class="forminside">
+
+                <h2>Signup</h2>
+                <p class="details">Please enter your details here!📝</p>
+
+                <div class="ipf">
+                    <input type="text" placeholder="&#xf508;  Name" style="font-family:'Times New Roman', Times, serif, FontAwesome" formControlName="name" class="form-control form-control-lg">
+                    <label class="form-label" for="typeEmailX">Name</label>
+                    <span *ngIf="signinform.controls['name'].touched && signinform.controls['name'].errors?.['required']" class="text-danger">*The name is required.</span>
+                        <span *ngIf="signinform.controls['name'].errors?.['pattern']" class="text-danger">THIS IS INVALID NAME</span>
+                     </div>
+
+
+
+                <div class="ipf">
+                    <input type="text" placeholder="&#xf10b;  Mobilenumber" style="font-family:'Times New Roman', Times, serif, FontAwesome" minlength="10" maxlength="10" formControlName="mobileNo" class="form-control form-control-lg">
+                    <label class="form-label" for="typeEmailX">Mobile No</label>
+                    <span *ngIf="signinform.controls['mobileNo'].touched && signinform.controls['mobileNo'].errors?.['required']" class="text-danger">*The Mobile Number is Required</span>
+                      <span *ngIf="signinform.controls['mobileNo'].errors?.['pattern']" class="text-danger">*The Mobile Number is start with 6-9</span>
+                      <span *ngIf="signinform.controls['mobileNo'].errors?.['pattern']" class="text-danger">*The Mobile Number should be 10 numbers</span>
+                    
+                </div>
+
+                <div class="ipf">
+                    <input type="email" placeholder="&#xf0e0;  E-mail" style="font-family:'Times New Roman', Times, serif, FontAwesome" formControlName="email" id="typeEmailX" class="form-control form-control-lg"/><!---- placeholder=" &#xf0e0; Name" style ="font-family: 'Font Awesome 6 Free';font-weight:400;" -->
+                    <label class="form-label" for="typeEmailX">Email</label>
+                    <span *ngIf="signinform.controls['email'].touched && signinform.controls['email'].errors?.['required']" class="text-danger">*The Email is required.</span>
+                    <span *ngIf="signinform.controls['email'].errors?.['pattern']" class="text-danger">THIS IS INVALID EMAIL</span>
+                  
+                 
+                 </div>
+
+                <div class="ipf">
+                    <input type="password" placeholder="&#xf13e;  password" style="font-family:'Times New Roman', Times, serif, FontAwesome"  formControlName="password" id="typePasswordX"
+                        class="form-control form-control-lg" />
+                    <label class="form-label" for="typePasswordX">Password</label>
+                    <span *ngIf="signinform.controls['password'].touched && signinform.controls['password'].invalid" class="text-danger">*The password is required.</span>
+                    
+                </div>
+
+                <div class="ipf">
+                    <input type="password" placeholder="&#xf13e; Confirm Password" style="font-family:'Times New Roman', Times, serif, FontAwesome"  formControlName="cpassword" id="typePasswordX"
+                        class="form-control form-control-lg" required/>
+                    <label class="form-label" for="typePasswordX">Confirm Password</label>
+                    <span *ngIf="signinform.controls['cpassword'].touched && signinform.controls['cpassword'].errors?.['required']" class="text-danger">*The confirm password is required.</span>
+                        <span *ngIf="signinform.controls['cpassword'].touched && signinform.value.password!==signinform.value.cpassword" class ="text-danger">This is Invalid Password </span>
+                </div>
+                
+
+                <div class="forget"> <a href="#!"> Forgot password? </a> </div>
+
+
+                <div> <button type="submit" [disabled]="!signinform.valid">signup</button> </div>
+
+            </div>
+
+            <div>
+                <p class="mb-0">Already have an account? ✔<a href="login" class="text-white-50 fw-bold">Log in</a>
+                </p>
+            </div>
+
+
+        </form>
+    </section>
+</div>

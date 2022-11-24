@@ -1,0 +1,93 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    },
+    {
+      "Name": "GOPI",
+      "phone": "9841494199",
+      "email": "GOPINTH@GMAIL.COM",
+      "password": "909090",
+      "confirmpassword": "",
+      "id": 2
+    },
+    {
+      "Name": "ggg",
+      "phone": "07654657867",
+      "email": "srigopinathmech@gmail.com",
+      "password": "1234",
+      "confirmpassword": "",
+      "id": 22
+    },
+    {
+      "Name": "dhoni",
+      "phone": "909089890",
+      "email": "dhoni@gmail.com",
+      "password": "12345",
+      "confirmpassword": "",
+      "id": 23
+    },
+    {
+      "Name": "",
+      "telephonenumber": "",
+      "mobilenumber": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 24
+    },
+    {
+      "Name": "aju",
+      "telephonenumber": "",
+      "mobilenumber": "",
+      "email": "aju@gmail.com",
+      "password": "123456",
+      "confirmpassword": "",
+      "id": 25
+    },
+    {
+      "Name": "",
+      "telephonenumber": "",
+      "mobilenumber": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 26
+    },
+    {
+      "Name": "",
+      "telephonenumber": "",
+      "mobilenumber": "",
+      "email": "",
+      "password": "",
+      "confirmpassword": "",
+      "id": 27
+    },
+    {
+      "name": "azeem",
+      "mobileNo": "8765445678",
+      "email": "aju@gmail.com",
+      "password": "123456",
+      "id": 28
+    },
+    {
+      "name": "virat",
+      "mobileNo": "9876543219",
+      "email": "virat@gmail.com",
+      "password": "virat",
+      "id": 29
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
